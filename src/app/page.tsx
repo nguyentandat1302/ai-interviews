@@ -3,7 +3,7 @@ import { Button, VStack } from "@chakra-ui/react";
 
 export default function HomePage() {
   return (
-    <VStack gap={4} mt={20}>
+    <VStack spacing={4} mt={20}>
       <Link href="/auth/login">
         <Button colorScheme="teal">Login</Button>
       </Link>
