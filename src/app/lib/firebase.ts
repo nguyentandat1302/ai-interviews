@@ -13,9 +13,7 @@ const firebaseConfig = {
   measurementId: "G-WEKJFC9Z58",
 }
 
-// Khởi tạo Firebase
 const app = initializeApp(firebaseConfig)
 
-// Khởi tạo các service
 export const auth = getAuth(app)
 export const analytics = getAnalytics(app)

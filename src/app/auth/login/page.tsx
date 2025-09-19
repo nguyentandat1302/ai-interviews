@@ -39,7 +39,7 @@ export default function LoginPage() {
       setLoading(true)
       setError(null)
       await signInWithEmailAndPassword(auth, email, password)
-      router.push("/dashboard") 
+      router.push("/auth/dashboard") 
     } catch (err: any) {
       setError(err.message)
     } finally {
@@ -52,7 +52,7 @@ export default function LoginPage() {
     try {
       const provider = new GoogleAuthProvider()
       await signInWithPopup(auth, provider)
-      router.push("/dashboard") 
+      router.push("/auth/dashboard") 
     } catch (err: any) {
       setError(err.message)
     }
