@@ -131,7 +131,7 @@ export default function DashboardPage() {
               Account
             </MenuButton>
             <MenuList>
-              <MenuItem as={Link} href="/profile">
+              <MenuItem as={Link} href="/components/profile">
                 Profile
               </MenuItem>
               <MenuItem onClick={handleLogout}>Log out</MenuItem>
