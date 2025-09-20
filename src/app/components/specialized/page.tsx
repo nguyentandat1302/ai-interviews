@@ -102,7 +102,7 @@ export default function MockTestPage() {
 
         <Button
           as={Link}
-          href="/premium"
+          href="/components/packageCompany"
           variant="ghost"
           justifyContent="flex-start"
           w="full"

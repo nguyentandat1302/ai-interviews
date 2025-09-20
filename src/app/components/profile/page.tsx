@@ -161,7 +161,7 @@ export default function ProfilePage() {
 
         <Button
           as={Link}
-          href="/premium"
+          href="/components/packageCompany"
           variant="ghost"
           justifyContent="flex-start"
           w="full"
