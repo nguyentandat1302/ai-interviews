@@ -33,7 +33,6 @@ export default function LoginPage() {
   const [error, setError] = useState<string | null>(null)
   const router = useRouter()
 
-  // Đăng nhập Email / Password
   const handleLogin = async () => {
     try {
       setLoading(true)
@@ -47,7 +46,6 @@ export default function LoginPage() {
     }
   }
 
-  // Đăng nhập Google
   const handleGoogleLogin = async () => {
     try {
       const provider = new GoogleAuthProvider()
@@ -60,7 +58,6 @@ export default function LoginPage() {
 
   return (
     <Center minH="100vh" bg="gray.50" flexDirection="column">
-      {/* Header */}
       <Flex
         w="100%"
         px={8}
@@ -76,7 +73,6 @@ export default function LoginPage() {
         </Text>
       </Flex>
 
-      {/* Login Box */}
       <Box
         bg="gray.100"
         w="full"

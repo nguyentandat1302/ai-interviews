@@ -83,12 +83,13 @@ export default function DashboardPage() {
             leftIcon={<FaHome />}
             justifyContent="flex-start"
             w="full"
+            color="blue.500"
           >
             Home
           </Button>
           <Button
             as={Link}
-            href="/practice"
+            href="/components/specialized"
             variant="ghost"
             leftIcon={<FaBicycle />}
             justifyContent="flex-start"
@@ -98,7 +99,7 @@ export default function DashboardPage() {
           </Button>
           <Button
             as={Link}
-            href="/mocktest"
+            href="/components/mocktest"
             variant="ghost"
             leftIcon={<FaRegFileAlt />}
             justifyContent="flex-start"
@@ -139,7 +140,6 @@ export default function DashboardPage() {
         </Box>
       </Box>
 
-      {/* Main Content */}
       <Box flex="1" p={6} bg="gray.50" overflow="auto">
         {/* Top Section */}
         <Flex justify="space-between" align="start" mb={8}>
@@ -153,7 +153,6 @@ export default function DashboardPage() {
             </Text>
           </Box>
 
-          {/* Contribution chart */}
           <Box>
             <Flex justify="flex-end" mb={2}>
               <Select
